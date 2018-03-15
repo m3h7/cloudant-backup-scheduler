@@ -1,0 +1,29 @@
+{
+  "name": "cloudant-backup-scheduler",
+  "version": "0.0.1",
+  "description": "Scheduled backup of Cloudant databases",
+  "main": "app.js",
+  "scripts": {
+    "start": "/usr/bin/env node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cloudant",
+    "couchdb",
+    "backup"
+  ],
+  "author": "Maik Hinrichs <maik@mahiso.de",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m3h7/cloudant-backup-scheduler"
+  },
+  "dependencies": {
+    "@cloudant/couchbackup": "^2.2.0",
+    "console-stamp": "^0.2.6",
+    "fs": "0.0.1-security",
+    "js-yaml": "^3.11.0",
+    "node-cron": "^1.2.1",
+    "path": "^0.12.7"
+  }
+}

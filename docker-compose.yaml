@@ -1,0 +1,10 @@
+version: '3'
+services:
+  cloudant-backup-scheduler:
+    image: $REGISTRY/$PROJECT/cloudant-backup-scheduler:$VERSION
+    build:
+      context: .
+    restart: unless-stopped
+    volumes:
+      - './config:/usr/src/app/config:ro'
+      - './backup:/usr/src/app/backup:rw'

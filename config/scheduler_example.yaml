@@ -1,0 +1,14 @@
+databasehost:
+  url: "cloudant.example.com"
+  username: "cloudantusername"
+  password: "cloudantuserpassword"
+schedule:
+  default: "0 0 * * *"
+database:
+      name: database01
+      schedule: "0 1 * * *"
+      history: 10
+database:
+      name: "database02"
+      schedule: "0 2 * * *"
+      history: 10
